@@ -27,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>
     </DebugType>
-    <DefineConstants>TRACE;__CONSTRAINED__</DefineConstants>
+    <DefineConstants>TRACE;__CONSTRAINED__;USE_RELEASE_STATISTICS</DefineConstants>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
