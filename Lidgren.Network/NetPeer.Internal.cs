@@ -116,7 +116,8 @@ namespace Lidgren.Network
 			}
 			m_lastSocketBind = now;
 
-			using (var mutex = new Mutex(false, "Global\\lidgrenSocketBind"))
+			using (var mutex = new Mutex(false)) //https://github.com/lidgren/lidgren-network-gen3/issues/114
+			//using (var mutex = new Mutex(false, "Global\\lidgrenSocketBind")) //use this for unity 2021 and above
 			{
 				try
 				{
